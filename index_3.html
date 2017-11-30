@@ -119,14 +119,16 @@
                 function sh_Event_add(obj,type,fn){if(obj.addEventListener){obj.addEventListener(type,fn,false);}else if(obj.attachEvent){obj["e"+type+fn]=fn;obj[type+fn]=function(){obj["e"+type+fn](window.event)};obj.attachEvent("on"+type,obj[type+fn]);}else{var oldonload=obj["on"+type];obj["on"+type]=function(e){oldonload(e);fn(e);};}};
             }
             function nonCreateElement(){
-                document.body.innerHTML += " <img src=\"http://apps.shareholder.com/track/trackpage.aspx?c=AAPL&p=index%2Ecfm&s=5644449909&r=" + (new Date()).getTime() + "\" style=\"visibility:hidden;display:none;\" alt=\"\" />";
+                document.body.innerHTML += " <img src=\"http://apps.shareholder.com/track/trackpage.aspx?c=AAPL&p=index%2Ecfm&s=5647593862&r=" + (new Date()).getTime() + "\" style=\"visibility:hidden;display:none;\" alt=\"\" />";
             }
             if(sh_Event_add)
-                sh_Event_add(window, 'load', function () {if(!document.createElement){nonCreateElement();}else{var img=document.createElement("img");if(!img)return;img.src="http://apps.shareholder.com/track/trackpage.aspx?c=AAPL&p=index%2Ecfm&s=5644449909&r=" + (new Date()).getTime();img.style.visibility='hidden';img.style.display='none';document.body.appendChild(img);}});
+                sh_Event_add(window, 'load', function () {if(!document.createElement){nonCreateElement();}else{var img=document.createElement("img");if(!img)return;img.src="http://apps.shareholder.com/track/trackpage.aspx?c=AAPL&p=index%2Ecfm&s=5647593862&r=" + (new Date()).getTime();img.style.visibility='hidden';img.style.display='none';document.body.appendChild(img);}});
 			
             //-->
           </script>
-        </head>
+        
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"167299",ustr:"",originlat:"0",clientrtt:"18",ghostip:"72.246.216.224",ipv6:false,pct:"10",clientip:"179.99.55.5",requestid:"631784eb",region:"5610",protocol:"",blver:13,akM:"r",akN:"",akTT:"O",akTX:"1",akTI:"631784eb",ai:"367873",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    </head>
 
 
 
